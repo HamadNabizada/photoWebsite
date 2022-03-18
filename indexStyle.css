@@ -162,13 +162,14 @@ nav{
     height:75px;
     width:75px;
     overflow: hidden;
+    margin-top: 1em;
 
 }
 .clientStories .imgContainer img{
     object-fit: cover;
 }
 .clientStories>p{
-    margin: 1em 0;
+    margin: 2em 0;
     text-align: left;
     font-size: 1.4rem;
 }
@@ -177,4 +178,28 @@ nav{
     align-self: center;
     margin-bottom:.2em;
     margin-top:.2em;
+}
+/* Contact */
+.contact{
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display:flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contact>p{
+    font-size:1.5rem;
+}
+.contact>*{
+    margin-top: 1em;
+}
+.contactDivider{
+    margin-top:0;
+    border-bottom: 1px solid black;
+    width: 75%;
+}
+.contact>p:last-child{
+    margin-bottom: 2em;
 }
