@@ -203,3 +203,30 @@ nav{
 .contact>p:last-child{
     margin-bottom: 2em;
 }
+
+/* footer */
+footer{
+    margin-bottom:0;
+}
+.socialsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}
+.socialLink{
+    display:flex;
+    flex-direction: row;
+    width:253px;
+    height:253px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.fa{
+    color:black;
+    margin: -1em 1em 1em 0;
+    padding-top:1em;
+    padding-left: 1em;
+}
