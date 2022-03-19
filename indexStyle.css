@@ -18,15 +18,17 @@ h3{
 body{
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 3em;
     color:rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
 }
 /* Header */
 header{
     height:1.2em;
     width:auto;
-    color: white;
+    color: black;
 }
 a{
     z-index: 2;
@@ -95,6 +97,7 @@ nav{
     background-size: cover;
     background-position: center;
     justify-content: space-between;
+    width:100%;
 }
 .hero h1{
     display:none;
@@ -125,6 +128,9 @@ nav{
 .portfolio>div{
     margin-top: 1em;
 }
+.portfolioTitleWrapper>p{
+    color: blue;
+}
 .portfolioContainerDivider{
     margin-bottom: .4em;
     width: 75%;
@@ -145,6 +151,7 @@ nav{
     width: 100%;
     color:white;
     font-size: 1.5rem;
+    max-width:50em;
 }
 /* Client Stories */
 .clientStories{
@@ -182,17 +189,17 @@ nav{
 /* Contact */
 .contact{
     margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
     display:flex;
     flex-direction: column;
     font-size: 2rem;
     font-weight: 400;
+    width: 100%;
+    padding-left: 1em;
 }
-.contact>p{
+.contact p{
     font-size:1.5rem;
 }
-.contact>*{
+.contact *{
     margin-top: 1em;
 }
 .contactDivider{
@@ -200,13 +207,23 @@ nav{
     border-bottom: 1px solid black;
     width: 75%;
 }
-.contact>p:last-child{
+.contact p:last-child{
     margin-bottom: 2em;
+}
+.contactsWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactsWrapper .imgContainer{
+    max-width: 20em;
 }
 
 /* footer */
 footer{
     margin-bottom:0;
+    width: 100%;
 }
 .socialsContainer{
     display:flex;
@@ -230,3 +247,68 @@ footer{
     padding-top:1em;
     padding-left: 1em;
 }
+
+@media (min-width: 600px) and (max-width: 900px){
+
+    .portfolio{
+        max-width: 20em;
+    }
+    .contactsWrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+}
+
+@media (min-width: 901px){
+    header{
+        padding: 1em 2em;
+    }
+    /* portfolio */
+    .portfolio{
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolioContainerWrapper{
+        display:flex;
+        flex-direction: row;
+        margin: 3em;
+    }
+    .portfolioContainerDivider{
+        display:none;
+    }
+    .portfolio>div{
+        width:100%;
+    }
+    .portfolioContainerWrapper .portfolioContainer:nth-child(2){
+        margin: 0 1em;
+    }
+    .img2, .img3{
+        position: relative;
+        top: 2.3em;
+    }
+    .img1, .img2, .img3{
+        max-height: 550px;
+    }
+    .portfolioContainer{
+        overflow: hidden;
+    }
+
+    /* Contact */
+    .contactsWrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .contactsWrapper>.imgContainer{
+        margin-right: 5em;
+    }
+  
+}
+
+    
