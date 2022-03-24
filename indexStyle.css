@@ -60,7 +60,9 @@ header{
     justify-content: space-between;
 }
 .menuNav{
+    cursor: pointer;
     display:flex;
+    color:white;
     flex-direction: row;
     font-size: 1.6rem;
 
@@ -87,6 +89,29 @@ nav{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+/* Menu Section */
+.menu{
+    z-index: 100;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    border: 1px solid green;
+    justify-content: center;
+    align-items: left;
+
+}
+.menuHide{
+    display: none;
+}
+.navMenu{
+    border: 1px solid red;
+    cursor: pointer;
+}
+
 /* Landing Page */
 .hero{
     display:flex;
@@ -104,7 +129,6 @@ nav{
     justify-self: center;
     align-self: center;
     font-size: 9rem;
-    margin-top: .5em;
 }
 /* Portfolio section */
 .portfolio{
