@@ -95,11 +95,10 @@ nav{
     display:flex;
     flex-direction: column;
     position: absolute;
-    top: -20%;
+    top: -100%;
     left: 0;
     background-color: white;
     width: 100vw;
-    border: 1px solid green;
     justify-content: center;
     align-items: left;
     transition: all .25s;
@@ -109,9 +108,47 @@ nav{
     top: 0;
 }
 .navMenu{
-    border: 1px solid red;
+    border-bottom: 1px solid black;
     cursor: pointer;
     font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5em;
+    padding-right: 1em;
+}
+.navMenu:hover{
+    cursor: pointer;
+}
+
+.menu>.navMenu:first-child{
+    font-size: .5em;
+}
+.menu>.navMenu>div>a{
+    color:black;
+}
+
+.subMenu{
+    font-size: 2rem; 
+    display:flex;
+    flex-direction: column;
+    height: 10rem;
+    transition: all .3s;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.subMenu>ul{
+    height:10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.subMenuOpen{
+    height:0px;
+    padding:0;
+    contain: content;
+    transition: all .3s;
 }
 
 /* Landing Page */
@@ -286,6 +323,9 @@ footer{
         margin-bottom: 1em;
     }
 
+    .navMenu{
+        padding-right: 1.5em;
+    }
 }
 
 @media (min-width: 901px){
@@ -334,6 +374,9 @@ footer{
         margin-right: 5em;
     }
   
+    .navMenu{
+        padding-right: 2.5em;
+    }
 }
 
     
