@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+body{
+    background-color: rgb(116, 25, 25);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu Section */
+.menu{
+    z-index: 100;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    justify-content: center;
+    align-items: left;
+    transition: all .25s;
+}
+
+.menuHide{
+    top: 0;
+}
+.navMenu{
+    border-bottom: 1px solid black;
+    background-color: white;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5em;
+    padding-right: 1em;
+    background-color: rgb(250, 250, 250);
+}
+.downArrow:hover{
+    cursor: pointer;
+}
+#close:hover{
+    cursor: pointer;
+}
+#close{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu>.navMenu:first-child{
+    font-size: .5em;
+}
+.menu>.navMenu>div>a{
+    color:black;
+}
+
+.subMenu{
+    font-size: 2rem; 
+    display:flex;
+    flex-direction: column;
+    height: 10rem;
+    transition: all .3s;
+    overflow: hidden;
+    justify-content: space-evenly;
+    background-color: rgb(230, 230, 230);
+}
+.subMenu>ul{
+    height:10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.subMenuOpen{
+    height:0px;
+    padding:0;
+    contain: content;
+    transition: all .3s;
+}
+li{
+    display:flex;
+    flex-direction: row;
+    color: black;
+}
+li a {
+    font-family: 'Libre Franklin', sans-serif;
+    color:black;
+}
+li a li:hover{
+    cursor: pointer;
+}
+
+
+/* Header */
+header{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 2rem;
+    margin-top: 1em;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.menuNav{
+    display: flex;
+    flex-direction: row;
+}
+.menuBtn{
+    align-self: center;
+    margin-left: .6em;
+    display: flex;
+    flex-direction: column;
+    width: .9em;
+    height: .9em;
+    justify-content: space-around;
+
+}
+
+.menuBtn > div{
+    border-bottom: .1rem solid rgb(0, 0, 0);
+}
+
+.portfolioContainer{
+    margin-top: 3em;
+    width: 80%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(148, 38, 38);
+    border-radius: 30px;
+}
+.portfolioContainer p {
+    font-size: 2rem;
+    margin-top: 1em;
+}
+.imgWrapper{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer{
+
+}
+.img{
+   
+}

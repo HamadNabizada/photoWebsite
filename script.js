@@ -7,6 +7,9 @@ const navMenuSocial = document.getElementById('navMenuSocial');
 const socialSubMenu = document.getElementById('socialSubMenu');
 const websiteSubMenu = document.getElementById('websiteSubMenu');
 const contactSubMenu = document.getElementById('contactSubMenu');
+const portfolioBtn = document.getElementById('portfolioBtn');
+
+
 
 
 function displayMenu(){
@@ -21,16 +24,19 @@ function closeAllSubMenu(){
     }
 }
 function toggleWebSubMenu(){
-    closeAllSubMenu();
-    websiteSubMenu.classList.remove('subMenuOpen')
+    
+    websiteSubMenu.classList.toggle('subMenuOpen')
 }
 function toggleSocialSubMenu(){
-    closeAllSubMenu();
-    socialSubMenu.classList.remove('subMenuOpen')
+  
+    socialSubMenu.classList.toggle('subMenuOpen')
 }
 function toggleContactSubMenu(){
-    closeAllSubMenu();
-    contactSubMenu.classList.remove('subMenuOpen')
+    
+    contactSubMenu.classList.toggle('subMenuOpen')
+}
+function goToPortfolio(){
+    window.location = 'portfolio.html'
 }
 
 
@@ -40,3 +46,4 @@ navMenuSocial.addEventListener('click', toggleSocialSubMenu);
 navMenuContact.addEventListener('click', toggleContactSubMenu);
 menuBtn.addEventListener('click', displayMenu);
 closeMenu.addEventListener('click', displayMenu);
+portfolioBtn.addEventListener('click', goToPortfolio);
